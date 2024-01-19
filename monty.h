@@ -1,5 +1,6 @@
 #ifndef MONTY_H
 #define MONTY_H
+#define  _POSIX_C_SOURCE 200809L
 #include <stdio.h>
 #include <stdlib.h>
 #include <sys/types.h>
@@ -60,3 +61,10 @@ void f_add(stack_t **head, unsigned int counter);
 void f_nop(stack_t **head, unsigned int counter);
 int main(int argc, char *argv[]);
 int execute(char *content, stack_t **stack, unsigned int counter, FILE *file);
+void free_stack(stack_t *head);
+void addnode(stack_t **head, int n);
+void addqueue(stack_t **head, int n);
+ssize_t getstdin(char **lineptr, int file);
+char  *clean_line(char *content);
+
+#endif
