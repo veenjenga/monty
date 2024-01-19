@@ -59,3 +59,4 @@ void f_swap(stack_t **head, unsigned int counter);
 void f_add(stack_t **head, unsigned int counter);
 void f_nop(stack_t **head, unsigned int counter);
 int main(int argc, char *argv[]);
+int execute(char *content, stack_t **stack, unsigned int counter, FILE *file);
